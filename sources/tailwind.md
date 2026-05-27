@@ -1,5 +1,10 @@
 # Design System: Tailwind CSS - Rapidly build modern websites without ever leaving your HTML.
 
+> This is a real `DESIGN.md` example generated from [https://tailwindcss.com](https://tailwindcss.com) with `npx brandmd`.
+>
+> Drop a `DESIGN.md` like this in your project root so Claude Code, Cursor, Gemini CLI, Codex, or Google Stitch can use the colors, typography, spacing, and UI patterns when generating UI.
+>
+> Generate one for your site: `npx brandmd https://yoursite.com` ([npm](https://www.npmjs.com/package/brandmd) · [repo](https://github.com/yuvrajangadsingh/brandmd))
 ## 1. Visual Theme & Atmosphere
 
 **Overall mood:** Dark and moody
@@ -47,7 +52,7 @@
 
 ### Buttons
 - Text color: `oklab(0.129999 -0.00404751 -0.027702 / 0.5)`
-- Corner radius: 9999px (pill)
+- Corner radius: 3.35544e+07px
 - Padding: 8px 16px 8px 16px
 - Font: 14px, weight 400
 
@@ -66,7 +71,7 @@
 
 **Base unit:** 4px grid (values are mostly multiples of 4).
 
-**Border radii:** 4px, 8px, 12px, 16px, 16px 16px 0px 0px, 24px, 32px, 9999px (pill)
+**Border radii:** 4px, 8px, 12px, 16px, 16px 16px 0px 0px, 24px, 32px, 3.35544e+07px
 
 ## 6. Guidelines
 
@@ -80,7 +85,7 @@
 - Don't introduce colors outside the palette above
 - Don't mix fonts beyond inter and plexMono
 - Don't use inline styles when the design system covers the pattern
-- Don't use border-radius values outside: 4px, 8px, 12px, 16px, 16px 16px 0px 0px, 24px, 32px, 9999px (pill)
+- Don't use border-radius values outside: 4px, 8px, 12px, 16px, 16px 16px 0px 0px, 24px, 32px, 3.35544e+07px
 
 ---
 

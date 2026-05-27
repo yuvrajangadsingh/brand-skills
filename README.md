@@ -6,7 +6,7 @@ Installable [Agent Skills](https://agentskills.io/home) for popular dev / SaaS b
 npx skills add yuvrajangadsingh/brand-skills
 ```
 
-Each skill drops a `SKILL.md` and a `references/DESIGN.md` into your project's `.claude/skills/<brand>-brand/` (or equivalent agent skills path). Your AI coding agent (Claude Code, Cursor, Codex, Gemini CLI) then uses the brand's real colors, typography, spacing, and component patterns when generating UI for that aesthetic.
+Each skill drops a `SKILL.md` and a `references/DESIGN.md` into your project's `.claude/skills/<brand>-brand/` (or equivalent agent skills path). Your AI coding agent (Claude Code, Cursor, Codex, Gemini CLI) then has the observed public CSS/design tokens (colors, typography, spacing, components) for that brand when generating UI in that aesthetic.
 
 ## What's here
 
@@ -22,9 +22,9 @@ Each skill drops a `SKILL.md` and a `references/DESIGN.md` into your project's `
 
 **These are community examples generated from public brand pages using [brandmd](https://github.com/yuvrajangadsingh/brandmd). They are NOT affiliated with or endorsed by the named brands.** Each skill is a snapshot of the public marketing site's visible design tokens. Use them for prototyping, internal tools, learning, or any UI work where matching a known aesthetic is the goal. For commercial brand reproduction, always check the brand's own brand-guidelines page first.
 
-## How this compares to google/skills
+## How this compares to other skills repos
 
-[google/skills](https://github.com/google/skills) ships skills for Google Cloud products (Gemini API, Firebase, BigQuery, etc) using the same `SKILL.md` schema. `brand-skills` ships skills for brand design systems instead. Same install path, complementary scope.
+[google/skills](https://github.com/google/skills) ships skills for Google Cloud products (Gemini API, Firebase, BigQuery, etc). [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) ships React + Vercel skills. `brand-skills` follows the same installable-skills convention but ships brand design system snapshots instead. Same install path, different scope.
 
 ## Generate your own
 
