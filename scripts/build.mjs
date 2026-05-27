@@ -71,9 +71,14 @@ function extractDesignBody(raw) {
 
 function buildSkillMd(brand) {
   const ref = "references/DESIGN.md";
+  // Description is multi-line YAML block scalar to safely contain colons inside the prose
+  // (parsers reject `key: value: more` as ambiguous). Indented by 2 spaces.
+  const fullDesc = `${brand.when_to_use} Tokens (colors, typography, spacing, components, shape language) are in ${ref}.`;
+  const yamlDesc = fullDesc.match(/.{1,90}(\s|$)/g).map(s => `  ${s.trim()}`).join("\n");
   return `---
 name: ${brand.slug}
-description: ${brand.when_to_use} Tokens (colors, typography, spacing, components, shape language) are in ${ref}.
+description: >-
+${yamlDesc}
 compatibility: Requires ${ref} (bundled with this skill).
 ---
 

@@ -1,6 +1,10 @@
 ---
 name: mintlify-brand
-description: Use when the user is building documentation or a developer marketing site that should feel like Mintlify: clean docs aesthetic, soft accents, friendly typography, generous spacing. Tokens (colors, typography, spacing, components, shape language) are in references/DESIGN.md.
+description: >-
+  Use when the user is building documentation or a developer marketing site that should feel
+  like Mintlify: clean docs aesthetic, soft accents, friendly typography, generous spacing.
+  Tokens (colors, typography, spacing, components, shape language) are in
+  references/DESIGN.md.
 compatibility: Requires references/DESIGN.md (bundled with this skill).
 ---
 

@@ -1,6 +1,9 @@
 ---
 name: shadcn-brand
-description: Use when the user wants a UI that follows the shadcn/ui aesthetic: neutral palette, refined typography, restrained accents, minimal shadows, dense but readable. Tokens (colors, typography, spacing, components, shape language) are in references/DESIGN.md.
+description: >-
+  Use when the user wants a UI that follows the shadcn/ui aesthetic: neutral palette,
+  refined typography, restrained accents, minimal shadows, dense but readable. Tokens
+  (colors, typography, spacing, components, shape language) are in references/DESIGN.md.
 compatibility: Requires references/DESIGN.md (bundled with this skill).
 ---
 

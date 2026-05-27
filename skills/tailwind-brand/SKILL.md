@@ -1,6 +1,10 @@
 ---
 name: tailwind-brand
-description: Use when the user is building a developer documentation, landing page, or UI that should feel like the Tailwind CSS website: clean utility-first aesthetic, generous whitespace, sky/blue accents, system-sans typography. Tokens (colors, typography, spacing, components, shape language) are in references/DESIGN.md.
+description: >-
+  Use when the user is building a developer documentation, landing page, or UI that should
+  feel like the Tailwind CSS website: clean utility-first aesthetic, generous whitespace,
+  sky/blue accents, system-sans typography. Tokens (colors, typography, spacing, components,
+  shape language) are in references/DESIGN.md.
 compatibility: Requires references/DESIGN.md (bundled with this skill).
 ---
 

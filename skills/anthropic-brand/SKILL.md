@@ -1,6 +1,9 @@
 ---
 name: anthropic-brand
-description: Use when the user wants AI-product UI that feels like Anthropic: warm neutrals, restrained palette, editorial typography, calm density. Tokens (colors, typography, spacing, components, shape language) are in references/DESIGN.md.
+description: >-
+  Use when the user wants AI-product UI that feels like Anthropic: warm neutrals, restrained
+  palette, editorial typography, calm density. Tokens (colors, typography, spacing,
+  components, shape language) are in references/DESIGN.md.
 compatibility: Requires references/DESIGN.md (bundled with this skill).
 ---
 
