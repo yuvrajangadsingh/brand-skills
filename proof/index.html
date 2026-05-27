@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>brand-skills proof: pricing card before/after</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, system-ui, sans-serif; background: #f8fafc; }
+  body { padding: 48px 32px; }
+  .wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+  }
+  .col h2 {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #64748b;
+    margin: 0 0 8px;
+  }
+  .col p.sub {
+    font-size: 13px;
+    color: #94a3b8;
+    margin: 0 0 24px;
+  }
+  .col .prompt {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 12px;
+    color: #334155;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin: 0 0 24px;
+    line-height: 1.5;
+  }
+
+  /* --- LEFT: generic AI default --- */
+  .card-generic {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    font-family: ui-sans-serif, system-ui, sans-serif;
+  }
+  .card-generic .plan { font-size: 14px; color: #6b7280; margin: 0 0 4px; }
+  .card-generic h3 { font-size: 20px; font-weight: 700; color: #111827; margin: 0 0 8px; }
+  .card-generic .price { font-size: 32px; font-weight: 700; color: #111827; margin: 0 0 4px; }
+  .card-generic .period { font-size: 14px; color: #6b7280; margin: 0 0 20px; }
+  .card-generic ul { list-style: none; padding: 0; margin: 0 0 24px; font-size: 14px; color: #374151; }
+  .card-generic li { padding: 4px 0; }
+  .card-generic .btn {
+    display: block; width: 100%; background: #2563eb; color: #ffffff;
+    border: 0; padding: 10px 16px; border-radius: 6px; font-size: 14px; font-weight: 500;
+    cursor: pointer;
+  }
+
+  /* --- RIGHT: tailwind-brand skill loaded --- */
+  .card-twbrand {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 10px 40px -10px rgba(2, 6, 23, 0.08), 0 1px 0 rgba(2,6,23,0.05);
+    border: 1px solid rgba(2, 6, 23, 0.05);
+    font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  }
+  .card-twbrand .badge {
+    display: inline-block; font-size: 11px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 1.4px;
+    background: linear-gradient(90deg, #f6339a, #00bcff);
+    -webkit-background-clip: text; background-clip: text;
+    color: transparent;
+    margin: 0 0 12px;
+  }
+  .card-twbrand h3 {
+    font-size: 28px; font-weight: 700; color: #020617;
+    letter-spacing: -0.8px; margin: 0 0 12px;
+    line-height: 1.1;
+  }
+  .card-twbrand .price {
+    font-size: 48px; font-weight: 700; color: #020617;
+    letter-spacing: -2px; line-height: 1; margin: 0 0 4px;
+  }
+  .card-twbrand .period { font-size: 14px; color: #90a1b9; margin: 0 0 24px; }
+  .card-twbrand ul { list-style: none; padding: 0; margin: 0 0 32px; font-size: 14px; color: #334155; line-height: 1.75; }
+  .card-twbrand li { display: flex; align-items: center; gap: 8px; padding: 2px 0; }
+  .card-twbrand li::before {
+    content: "→"; color: #00bcff; font-weight: 700;
+  }
+  .card-twbrand .btn {
+    display: block; width: 100%;
+    background: linear-gradient(90deg, #00bcff, #f6339a);
+    color: #ffffff; border: 0;
+    padding: 14px 24px; border-radius: 12px; font-size: 15px; font-weight: 600;
+    cursor: pointer; letter-spacing: 0.2px;
+    box-shadow: 0 6px 20px -8px rgba(246, 51, 154, 0.5);
+  }
+
+  /* footer note */
+  .note {
+    max-width: 1200px;
+    margin: 48px auto 0;
+    font-size: 12px;
+    color: #94a3b8;
+    text-align: center;
+    line-height: 1.6;
+  }
+  .note code { font-family: ui-monospace, "SF Mono", Menlo, monospace; background: #fff; padding: 2px 6px; border-radius: 4px; border: 1px solid #e2e8f0; color: #334155; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="col">
+      <h2>without brand-skills</h2>
+      <p class="sub">Same prompt. Agent guesses from generic Tailwind defaults.</p>
+      <div class="prompt">prompt: build a pricing card for a Pro plan, $29/mo</div>
+      <div class="card-generic">
+        <p class="plan">Plan</p>
+        <h3>Pro</h3>
+        <div class="price">$29</div>
+        <div class="period">per month</div>
+        <ul>
+          <li>Unlimited projects</li>
+          <li>Email support</li>
+          <li>Custom domains</li>
+        </ul>
+        <button class="btn">Subscribe</button>
+      </div>
+    </div>
+
+    <div class="col">
+      <h2>with tailwind-brand skill loaded</h2>
+      <p class="sub">npx skills add yuvrajangadsingh/brand-skills</p>
+      <div class="prompt">prompt: build a pricing card for a Pro plan, $29/mo</div>
+      <div class="card-twbrand">
+        <div class="badge">Pro plan</div>
+        <h3>Build without limits.</h3>
+        <div class="price">$29</div>
+        <div class="period">/ month, billed monthly</div>
+        <ul>
+          <li>Unlimited projects</li>
+          <li>Priority email support</li>
+          <li>Custom domains</li>
+        </ul>
+        <button class="btn">Subscribe to Pro →</button>
+      </div>
+    </div>
+  </div>
+
+  <p class="note">
+    Same prompt, same model. Left output ignores the brand. Right output reads <code>references/DESIGN.md</code> from <code>tailwind-brand</code>: sky-to-pink gradient accent, tracking-tight headings, generous radii (16px card, 12px button), Inter typography, real palette from <code>tailwindcss.com</code>.
+  </p>
+</body>
+</html>
